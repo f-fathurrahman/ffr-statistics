@@ -32,7 +32,7 @@ for i in range(Ntrials):
 
 num_bins = 40
 fig, ax = plt.subplots()
-ax.hist(χ2, num_bins, density=True, label="sample means")
+ax.hist(χ2, num_bins, density=True, label="chi2")
 
 chi2_rv = stats.chi2(Nsamples)
 # dof = Nsamples
