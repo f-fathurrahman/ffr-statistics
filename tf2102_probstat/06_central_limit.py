@@ -18,7 +18,7 @@ matplotlib.rcParams.update({
 #σ = 1.2
 #population = stats.norm(loc=μ, scale=σ)
 
-#population = stats.norm(loc=-5.0, scale=10) # random [-5,5]
+#population = stats.uniform(loc=-5.0, scale=10) # random [-5,5]
 #μ = population.mean()
 #σ = population.std()
 
@@ -26,8 +26,8 @@ population = stats.binom(10, 0.2)
 μ = population.mean()
 σ = population.std()
 
-print("Mean of sample_means = %.6f" % μ)
-print("std of sample_means  = %.6f" % σ)
+print("Mean of population = %.6f" % μ)
+print("std of population  = %.6f" % σ)
 
 Ntrials = 20000
 Nsamples = 100
